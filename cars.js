@@ -36,6 +36,7 @@ class Car {
 
 let CarDacia = new Car("dacia", 1988);
 
+// console.log(cars);
 function getPictureUrl() {
   // Creare variabiale pentru a capta valoarea introdusa de user in cele 2 inputuri.
   let carModel = document.getElementById("cars").value;
@@ -45,6 +46,7 @@ function getPictureUrl() {
   console.log(carYear);
 
   let carChoosed = document.getElementById("whereToadd");
+
   //To Do
   //trebuie sa cream un un obiect de tipul car care are ca si valori car model si car year
 
@@ -54,7 +56,7 @@ function getPictureUrl() {
   //To Do
   //In loc de car model trebuie sa punem un Bootstrap Card care are ca si poza - Url-ul din obiectul car, proprietatea pictureUrl
 
-  // Continutul div-ului este populat cu o valore ( ce a introduc userul in input)
+  // Continutul div-ului este populat cu o valore ( ce a introduc userul in inp)
   element.innerHTML = carModel;
 
   // JS introduce elementul  creat in HTML
