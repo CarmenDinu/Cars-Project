@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="cars" placeholder="Car model" />
+    <!-- <select id="cars">
+      <option>Choose</option>
+      <option value="dacia">Dacia</option>
+      <option value="mustang">Mustang</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="bmw">BMW</option>
+    </select> -->
+
+    <input
+      type="number"
+      min="1900"
+      max="2020"
+      list="years"
+      id="years"
+      placeholder="Fabrication year"
+    />
+    <!-- <select id="years">
+      <option>1876</option>
+      <option>1789</option>
+      <option>1978</option>
+      <option>1865</option>
+    </select> -->
+
+    <button id="btn" onclick="getPictureUrl()">ADD</button>
+
+    <div id="dacia">Dacia</div>
+    <div id="mustang">Mustang</div>
+    <div id="mercedes">Mercedes</div>
+    <div id="bmw">Bmw</div>
+    <script src="car.js"></script>
+    <div id="whereToadd"></div>
+  </body>
+</html>
