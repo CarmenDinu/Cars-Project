@@ -46,16 +46,10 @@ function getPictureUrl() {
 
   let carChoosed = document.getElementById("whereToadd");
 
-  //To Do
-  //trebuie sa cream un un obiect de tipul car care are ca si valori car model si car year
-
   //JS creaza un div dar nu este introdus inca in HTML
   let element = document.createElement("div");
 
-  //To Do
-  //In loc de car model trebuie sa punem un Bootstrap Card care are ca si poza - Url-ul din obiectul car, proprietatea pictureUrl
-
-  // Continutul div-ului este populat cu o valore ( ce a introduc userul in inp)
+  // Continutul div-ului este populat cu HTML cu valori specifice
 
   element.innerHTML = `<div class="card" style="width:25rem">
   <img class="card-img-top" src="${carObject.pictureUrl}" alt="Card image cap">
