@@ -3,17 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cars</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <input type="text" id="cars" placeholder="Car model" />
-    <!-- <select id="cars">
-      <option>Choose</option>
-      <option value="dacia">Dacia</option>
-      <option value="mustang">Mustang</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="bmw">BMW</option>
-    </select> -->
+    <!-- <input type="text" id="cars" placeholder="Car model" /> -->
+    <select id="cars">
+      <option value="Default">Default</option>
+      <option value="Dacia">Dacia</option>
+      <option value="Mustang">Mustang</option>
+      <option value="Mercedes">Mercedes</option>
+      <option value="Bmw">BMW</option>
+    </select>
 
     <input
       type="number"
@@ -30,13 +38,11 @@
       <option>1865</option>
     </select> -->
 
-    <button id="btn" onclick="getPictureUrl()">ADD</button>
+    <button id="btn" class="btn btn-primary" onclick="getPictureUrl()">
+      ADD
+    </button>
 
-    <div id="dacia">Dacia</div>
-    <div id="mustang">Mustang</div>
-    <div id="mercedes">Mercedes</div>
-    <div id="bmw">Bmw</div>
-    <script src="cars.js"></script>
     <div id="whereToadd"></div>
+    <script src="cars.js"></script>
   </body>
 </html>

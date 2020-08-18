@@ -11,14 +11,14 @@ class Pictures {
   constructor() {
     // Cand cream un obiect nou din clasa de Pictures prin new Pictures , acesta va avea o proprietate cu numele de urls pentr ca avem this.urls
     this.urls = {
-      dacia:
+      Dacia:
         "https://pbs.twimg.com/media/A8FW1-lCUAEeoSh?format=jpg&name=small",
-      mercedes: "https://car-from-uk.com/ebay/carphotos/big/ebay449831.jpg",
-      bmw:
+      Mercedes: "https://car-from-uk.com/ebay/carphotos/big/ebay449831.jpg",
+      Bmw:
         "https://i.pinimg.com/564x/6b/0b/eb/6b0beb314f071994a4023400504b2a99.jpg",
-      mustang:
+      Mustang:
         "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/vintage-mustang-kirk-sewell.jpg",
-      default:
+      Default:
         "https://www.newvehiclevideos.com/photos/2020/BMW/7-series/Interior.jpg",
     };
   }
@@ -34,13 +34,12 @@ class Car {
   }
 }
 
-let CarDacia = new Car("dacia", 1988);
-
 // console.log(cars);
 function getPictureUrl() {
   // Creare variabiale pentru a capta valoarea introdusa de user in cele 2 inputuri.
   let carModel = document.getElementById("cars").value;
   let carYear = document.getElementById("years").value;
+  let carObject = new Car(carModel, carYear);
 
   console.log(carModel);
   console.log(carYear);
@@ -57,7 +56,14 @@ function getPictureUrl() {
   //In loc de car model trebuie sa punem un Bootstrap Card care are ca si poza - Url-ul din obiectul car, proprietatea pictureUrl
 
   // Continutul div-ului este populat cu o valore ( ce a introduc userul in inp)
-  element.innerHTML = carModel;
+
+  element.innerHTML = `<div class="card" style="width:25rem">
+  <img class="card-img-top" src="${carObject.pictureUrl}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">${carObject.model}</h5>
+    <p class="card-text">${carObject.year}</p>
+    </div>
+  </div>`;
 
   // JS introduce elementul  creat in HTML
   carChoosed.appendChild(element);
