@@ -25,12 +25,28 @@ class Pictures {
 }
 let pictures = new Pictures();
 
+let range = {
+  Dacia: "400km",
+  Mercedes: "300km",
+  Bmw: "300km",
+  Mustang: "300km",
+  Default: "0km",
+};
+
+class Range {
+  constructor() {
+    this.range = range;
+  }
+}
+let range1 = new Range();
+
 class Car {
   constructor(model, year) {
     this.model = model;
     this.year = year;
     //Putem accesa proprietatea unui obiect si prin paranteze patrate. Atunci cand accesam prin paranteze patrate trebuie pus un string intre paranteze sau o variabila care are ca si continut un string.Pe obiectul car creat din clasa car , vrem sa aiba propritatea de pictureUrl cu valoarea de ce am accesat din obiectul de pictures prin paranteze patrate
     this.pictureUrl = pictures.urls[model];
+    this.range = range1.range[model];
   }
 }
 
@@ -56,6 +72,7 @@ function getPictureUrl() {
   <div class="card-body">
     <h5 class="card-title font-italic">${carObject.model}</h5>
     <p class="card-text">${carObject.year}</p>
+    <p class="card-text">${carObject.range}</p>
     </div>
   </div>`;
 
