@@ -15,32 +15,40 @@
   </head>
   <body>
     <!-- <input type="text" id="cars" placeholder="Car model" /> -->
-    <select id="cars">
-      <option value="Default">Default</option>
-      <option value="Dacia">Dacia</option>
-      <option value="Mustang">Mustang</option>
-      <option value="Mercedes">Mercedes</option>
-      <option value="Bmw">BMW</option>
-    </select>
+    <div class="text-center">
+      <select id="cars" class="col-sm-2">
+        <option value="Default">Default</option>
+        <option value="Dacia">Dacia</option>
+        <option value="Mustang">Mustang</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Bmw">BMW</option>
+      </select>
 
-    <input
-      type="number"
-      min="1900"
-      max="2020"
-      list="years"
-      id="years"
-      placeholder="Fabrication year"
-    />
-    <!-- <select id="years">
+      <input
+        class="col-sm-2"
+        type="number"
+        min="1900"
+        max="2020"
+        list="years"
+        id="years"
+        placeholder="Fabrication year"
+      />
+      <!-- <select id="years">
       <option>1876</option>
       <option>1789</option>
       <option>1978</option>
       <option>1865</option>
     </select> -->
 
-    <button id="btn" class="btn btn-primary" onclick="getPictureUrl()">
-      ADD
-    </button>
+      <button
+        id="btn"
+        type="button"
+        class="btn btn-outline-primary btn-rounded waves-effect col-sm-2"
+        onclick="getPictureUrl() "
+      >
+        ADD
+      </button>
+    </div>
 
     <div id="whereToadd"></div>
     <script src="cars.js"></script>

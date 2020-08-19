@@ -51,10 +51,10 @@ function getPictureUrl() {
 
   // Continutul div-ului este populat cu HTML cu valori specifice
 
-  element.innerHTML = `<div class="card" style="width:25rem">
+  element.innerHTML = `<div class="card bg-info ml-auto mr-auto mt-5" style="width:25rem">
   <img class="card-img-top" src="${carObject.pictureUrl}" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">${carObject.model}</h5>
+    <h5 class="card-title font-italic">${carObject.model}</h5>
     <p class="card-text">${carObject.year}</p>
     </div>
   </div>`;
